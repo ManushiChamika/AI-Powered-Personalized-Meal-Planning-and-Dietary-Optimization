@@ -4,7 +4,7 @@
 This project introduces an **AI-powered meal planning and dietary optimization system** designed to assist diabetic patients in maintaining a healthy lifestyle through **personalized meal recommendations** and **adaptive diet adjustments**.  
 By leveraging **machine learning**, **computer vision**, and **health data analytics**, the system generates tailored diet plans, monitors user feedback, and continually improves meal suggestions.
 
-
+---
 
 ## 🎯 Objectives
 - Provide **personalized, data-driven meal recommendations** based on medical, dietary, and lifestyle data.  
@@ -12,7 +12,7 @@ By leveraging **machine learning**, **computer vision**, and **health data analy
 - Offer **adaptive feedback** through image recognition and meal tracking.  
 - Support users with an intuitive and accessible interface for daily dietary management.
 
-
+---
 
 ## 💡 Problem Statement
 People with diabetes often struggle to maintain consistent, healthy diets due to:
@@ -23,7 +23,7 @@ People with diabetes often struggle to maintain consistent, healthy diets due to
 
 This system addresses these gaps by combining **AI, nutrition science, and user interaction** to create dynamic, personalized dietary guidance.
 
-
+---
 
 ## 🧠 Key Technologies
 - **Machine Learning & AI** – Personalized meal prediction and optimization.
@@ -35,14 +35,18 @@ This system addresses these gaps by combining **AI, nutrition science, and user 
 ---
 
 ## 🔍 Key Features
-- 🍎 **Personalized Meal Planning** – Recommendations based on glucose levels, diet type, and user goals.  
-- 📸 **Food Image Analysis** – AI-powered recognition and portion estimation.  
-- 🧮 **Nutrition Optimization** – Balances macro and micronutrients automatically.  
-- 🗓️ **Automated Grocery List** – Generates weekly grocery plans.  
-- 🗣️ **Voice Interaction Support** – Elderly-friendly input and accessibility.  
-- 📊 **Health Analytics Dashboard** – Visual tracking of diet compliance and progress.
+### 🌟 Core Features (2)
+1. **Personalized, Glucose-Aware Meal Planning**  
+   - Inputs: user profile (age, BMI, glucose levels, goals, and preferences).  
+   - Output: adaptive meal plans aligned with carbohydrate intake and health goals.  
+   - Includes an **automated grocery list** and contextual explanations (e.g., “low GI + high fiber for better glucose control”).
 
+2. **Food Image Analysis & Carb Estimation**  
+   - Users can snap photos of meals using a mobile app.  
+   - The system uses **computer vision** to detect food types, portion sizes, and carbohydrate values.  
+   - Provides instant feedback and learns from user corrections for improved accuracy.
 
+---
 
 ## ⚙️ System Architecture
 1. **Input Layer:** User profile data (age, BMI, activity, glucose levels).  
@@ -50,33 +54,60 @@ This system addresses these gaps by combining **AI, nutrition science, and user 
 3. **Feedback Layer:** Image-based or manual user feedback.  
 4. **Output Layer:** Updated personalized meal plan and insights.
 
-
+---
 
 ## 🧩 Tools & Frameworks
 - **Python**  
-- **fast API*  
-- **Flutter**  
+- **FastAPI** – Backend API framework.  
+- **Flutter** – Mobile app development.  
+- **TensorFlow / PyTorch** – Model training and inference.  
+- **OpenCV** – Image processing for food recognition.  
+- **MongoDB / Firebase** – Data storage and user management.
 
+---
+
+## 🤖 Machine Learning Models (2)
+1. **Hybrid Meal Recommender (Meta-Learner)**  
+   - **Type:** Gradient-boosted trees (LightGBM/XGBoost) or shallow MLP.  
+   - **Inputs:** user data, glucose readings, meal history, nutrition info, and preferences.  
+   - **Outputs:** ranked meal recommendations with a suitability score.  
+   - **Training Data:** logs of meals vs glucose response, recipe database, user ratings.  
+   - **Evaluation Metrics:** RMSE (glucose prediction), top-K accuracy (meal relevance), and user adherence rate.
+
+2. **Vision-Based Nutrition Estimator**  
+   - **Type:** CNN-based (EfficientNet or ResNet) with multi-head outputs.  
+   - **Tasks:**  
+     - Food classification (multi-label).  
+     - Portion size estimation (regression).  
+     - Calorie and carbohydrate estimation via nutrition database mapping.  
+   - **Training Data:** Food-101, Nutrition5k, and custom diabetic image datasets.  
+   - **Evaluation Metrics:** mAP@0.5 (classification accuracy), MAE (portion weight & carb grams).
+
+---
 
 ## 📊 Sample Dataset & Model
-- Datasets: Nutrition5k, Food-101, and custom diabetic diet datasets.  
-- Models: CNN-based image classifiers and linear regression for calorie estimation.  
-- Evaluation Metrics: Accuracy, MAE (Mean Absolute Error), F1-score.
+- **Datasets:** Nutrition5k, Food-101, and custom diabetic diet datasets.  
+- **Models:** CNN-based image classifiers and linear regression for calorie estimation.  
+- **Evaluation Metrics:** Accuracy, MAE (Mean Absolute Error), F1-score.
 
-
+---
 
 ## 🔬 Research Areas
-- Artificial Intelligence in Nutrition and Health.
-- Explainable AI (XAI) for transparent meal recommendations.
+- Artificial Intelligence in Nutrition and Health.  
+- Explainable AI (XAI) for transparent meal recommendations.  
 - Adaptive learning models for long-term dietary optimization.
 
+---
 
 ## 📜 License
 This project is released under the **MIT License** – feel free to use, modify, and contribute!
 
+---
 
 ## 🚀 Future Enhancements
 - Integration with smart wearables (e.g., glucose monitors, fitness trackers).  
 - Multilingual voice assistant for accessibility.  
-- Real-time meal recommendations using IoT and cloud AI.
+- Real-time meal recommendations using IoT and cloud AI.  
+- Integration with hospital dietitian systems for clinical monitoring.
 
+---
