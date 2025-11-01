@@ -4,7 +4,7 @@
 This project introduces an **AI-powered meal planning and dietary optimization system** designed to assist diabetic patients in maintaining a healthy lifestyle through **personalized meal recommendations** and **adaptive diet adjustments**.  
 By leveraging **machine learning**, **computer vision**, and **health data analytics**, the system generates tailored diet plans, monitors user feedback, and continually improves meal suggestions.
 
----
+
 
 ## 🎯 Objectives
 - Provide **personalized, data-driven meal recommendations** based on medical, dietary, and lifestyle data.  
@@ -12,7 +12,7 @@ By leveraging **machine learning**, **computer vision**, and **health data analy
 - Offer **adaptive feedback** through image recognition and meal tracking.  
 - Support users with an intuitive and accessible interface for daily dietary management.
 
----
+
 
 ## 💡 Problem Statement
 People with diabetes often struggle to maintain consistent, healthy diets due to:
@@ -23,7 +23,7 @@ People with diabetes often struggle to maintain consistent, healthy diets due to
 
 This system addresses these gaps by combining **AI, nutrition science, and user interaction** to create dynamic, personalized dietary guidance.
 
----
+
 
 ## 🧠 Key Technologies
 - **Machine Learning & AI** – Personalized meal prediction and optimization.
@@ -42,7 +42,7 @@ This system addresses these gaps by combining **AI, nutrition science, and user 
 - 🗣️ **Voice Interaction Support** – Elderly-friendly input and accessibility.  
 - 📊 **Health Analytics Dashboard** – Visual tracking of diet compliance and progress.
 
----
+
 
 ## ⚙️ System Architecture
 1. **Input Layer:** User profile data (age, BMI, activity, glucose levels).  
@@ -50,20 +50,20 @@ This system addresses these gaps by combining **AI, nutrition science, and user 
 3. **Feedback Layer:** Image-based or manual user feedback.  
 4. **Output Layer:** Updated personalized meal plan and insights.
 
----
+
 
 ## 🧩 Tools & Frameworks
 - **Python**  
 - **fast API*  
 - **Flutter**  
----
+
 
 ## 📊 Sample Dataset & Model
 - Datasets: Nutrition5k, Food-101, and custom diabetic diet datasets.  
 - Models: CNN-based image classifiers and linear regression for calorie estimation.  
 - Evaluation Metrics: Accuracy, MAE (Mean Absolute Error), F1-score.
 
----
+
 
 ## 🔬 Research Areas
 - Artificial Intelligence in Nutrition and Health.
@@ -74,7 +74,6 @@ This system addresses these gaps by combining **AI, nutrition science, and user 
 ## 📜 License
 This project is released under the **MIT License** – feel free to use, modify, and contribute!
 
----
 
 ## 🚀 Future Enhancements
 - Integration with smart wearables (e.g., glucose monitors, fitness trackers).  
